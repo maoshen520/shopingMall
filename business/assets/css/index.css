@@ -1,0 +1,120 @@
+/* @media screen and (min-width: 992px) {
+  .right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .left {
+    display: none;
+  }
+} */
+
+button {
+  outline: none !important;
+}
+
+.aside-menu {
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #F5F5F5;
+  padding: 0;
+}
+
+.c-h {
+  padding: 0;
+}
+
+.c-b {
+  padding: 10px 0;
+  border-radius: 0;
+}
+
+.lt {
+  border: none;
+  padding-right: 0;
+}
+
+.ca {
+  border: none !important;
+}
+
+.ca,
+.l-g,
+.lt {
+  border-radius: 0 !important;
+}
+.register{
+  float:right;
+  margin-right: 10px;
+}
+.max-box{
+  min-width: 1200px;;
+}
+
+.upload{
+  width: 120px;
+  height: 36px;
+  margin-bottom: 0;
+  background-color: #28A745;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+}
+.upload>input{
+  display: none;
+}
+
+/* .upload{
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background-color: rgb(55, 90, 247);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+} */
+
+
+
+/* .upload>label>[type="file"]{
+  display: none;
+} */
+
+.preview-img{
+  width: 300px;
+  border: 1px solid #ddd;
+}
+
+.preview-box{
+  display: none;
+}
+
+.auto-img{
+  width: 100%;
+  display: block;;
+}
+.add-product,.edit-product{
+  width: 1300px;
+  display: none;
+}
+
+
+.img-box{
+  width: 50px;
+  margin: 0 auto;
+}
+
+
+td{
+  line-height: 50px;
+}
+
+.hide{
+  display: none;
+}

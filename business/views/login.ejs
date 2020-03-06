@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商家登录页面</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+    <div class="box">
+        <div class="left-box"></div>
+        <div class="right-box">
+            <div class="register-box">
+                <div class="title">LOGIN</div>
+                <form>
+                    <div class="form-group">
+                      <label for="email">邮箱:</label>
+                      <input type="text" class="form-control" id="email" placeholder="请输入用户名" autocomplete="off" name="email">
+                      <div class="invalid-feedback">
+                    </div>
+                    <div class="form-group">
+                      <label for="password1">密码:</label>
+                      <input type="password" class="form-control" id="password" placeholder="请输入密码" autocomplete="off" name="password1">
+                      <div class="invalid-feedback">
+                    </div>
+                    <button id="login" type="button" class="btn btn-primary btn-block login">登录</button>
+                    <div class="fl forget">忘记密码？<a href="/changePassword">找回密码</a></div>
+                    <div class="fr title-register">没有账号？<a href="/register">注册</a></div>             
+                </form>
+            </div>
+        </div  > 
+    </div>  
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/validForm.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>
