@@ -36,7 +36,6 @@ class API {
 
     }
 
-    // 删除数据
     //删除数据
     destroyData(modelName, condition) {
         //modelName: 模型名称, 类型string

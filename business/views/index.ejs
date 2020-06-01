@@ -33,8 +33,6 @@
       </div>
     </nav>
 
-
-
     <div class="container-fluid">
       <div class="row">
 
@@ -56,6 +54,7 @@
                   <ul class="list-group l-g" id="list-group" data-title="商品管理">
                     <li class="list-group-item lt" data-lititle='添加商品' name="add-product">添加商品</li>
                     <li class="list-group-item lt" data-lititle='编辑商品' name="edit-product">编辑商品</li>
+                    <li class="list-group-item lt" data-lititle='编辑商品' name="sold-product">已卖商品</li>
                   </ul>
                 </div>
               </div>
@@ -118,11 +117,9 @@
             </ol>
           </nav> -->
 
-
           <!-- 添加商品 -->
           <div class="add-product">
             <form>
-
               <!-- 商品类型 -->
               <div class="form-group">
                 <label for="product-type">商品类型</label>
@@ -189,7 +186,6 @@
                   <input type="file" id="upload" class="form-control-file" name="product-img">
                   <div class="invalid-feedback">请选择上传商品图片</div>
                 </label>
-                
               </div>
 
               <div class="form-group preview-box">
@@ -200,7 +196,7 @@
             </form>
           </div>
 
-
+          
           <!-- 编辑商品 -->
           <div class="edit-product">
             <table class="table table-bordered text-center table-hover table-sm">
@@ -227,10 +223,45 @@
               </tbody>
             </table>
             <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center">
+              <ul class="pagination pagination1 justify-content-center">
                 <li id="prev" class="page-item page-li"><a class="page-link" href="javascript:void(0);">上一页</a></li>
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">第<span id="page">1</span>页</a></li>
                 <li class="page-item"><a class="page-link" href="javascript:void(0);">共<span id="page-count">0</span>页</a></li>
+                <li id="next" class="page-item page-li"><a class="page-link" href="javascript:void(0);">下一页</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- 已购商品 -->
+          <div class="sold-product">
+            <table class="table table-bordered text-center table-hover table-sm">
+              <thead>
+                <tr>
+                  <th>
+                    <input type="checkbox">
+                  </th>
+                  <th>序号</th>
+                  <th>商品图片</th>
+                  <th>商品id</th>
+                  <th>商品名称</th>
+                  <th>商品价格</th>
+                  <th>商品数量</th>
+                  <th>订单号</th>
+                  <th>购买用户</th>
+                  <th>状态</th>
+                  <th>购买日期日期</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination2 justify-content-center">
+                <li id="prev" class="page-item page-li"><a class="page-link" href="javascript:void(0);">上一页</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">第<span id="page2">1</span>页</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">共<span id="page-count2">0</span>页</a></li>
                 <li id="next" class="page-item page-li"><a class="page-link" href="javascript:void(0);">下一页</a></li>
               </ul>
             </nav>
@@ -241,6 +272,15 @@
 
         </div>
       </div>
+    </div>
+
+    <div class="see-box">
+      <div class="content-box">
+        
+        <div class="see-close">关闭</div>
+      </div>
+      
+
     </div>
 
   </div>

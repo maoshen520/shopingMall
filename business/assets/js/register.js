@@ -76,7 +76,7 @@ $(function () {
                 email: email
             },
             success:function(data){
-                console.log('data1111==>',data);
+                // console.log('data1111==>',data);
 
                 // 防止发送邮箱失败
                 if(data.status = 4000){
@@ -88,6 +88,8 @@ $(function () {
 
                     //将生成的token保存在cookie
                     document.cookie = data.__ctk.key + '=' + data.__ctk.ctk + ';expires=' + expires;
+
+                   
                 }
                 else {
                     alert(data.msg)
@@ -108,7 +110,7 @@ $(function () {
         // registerValid.code.value = code;
 
         let result = validForm.valid(registerValid)
-        console.log('result==>',result)
+        // console.log('result==>',result)
 
         if(result.isValid){
             //发起注册post请求
@@ -137,9 +139,12 @@ $(function () {
                     console.log('data==>',data);
 
                     if(data.status == 1000){
+                        alert(data.msg)
                         location.href = '/login'
                     } else if(data.status ==1001 || data.status == 1002){
-                        console.log(data.msg)
+                        alert(data.msg)
+                    }else {
+                        alert(data.msg)
                     }                    
                 }
             })

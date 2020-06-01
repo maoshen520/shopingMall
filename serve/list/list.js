@@ -12,7 +12,7 @@ module.exports = {
     default:{
         key:'login',
         title:'登录的token验证',
-        url:['/business','/uploadProductData','/findProjectData','/disabledProductData']
+        url:['/business','/uploadProductData','/findProjectData','/disabledProductData','/findSoldProjectData']
     }
    
 }

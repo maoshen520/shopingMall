@@ -17,6 +17,9 @@ let Shopcart = require(__basename + '/db/model/shopcart.js');
 // 订单模型
 let Order = require(__basename + '/db/model/order.js');
 
+// 用户地址模型
+let Address = require(__basename + '/db/model/address.js');
+
 
 // 导出所有模型
 module.exports = {
@@ -25,6 +28,7 @@ module.exports = {
     Product,
     User,
     Shopcart,
-    Order
+    Order,
+    Address
 
 }

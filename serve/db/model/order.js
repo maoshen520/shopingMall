@@ -97,10 +97,19 @@ Order.init({
 
     // 商品状态 0:未付款  1：代发货 2已发货 3已收货
     status:{
-        type:Sequelize.INTEGER(1),
+        type:Sequelize.STRING(30),
         allowNull:false,
-        defaultValue: 0,
-        comment:'商品状态 0:未付款  1：代发货 2已发货 3已收货'
+        // 默认值
+        defaultValue:'',
+        comment:'商品状态 :未付款 代发货 已发货 已收货'
+    },
+
+    // 收货人地址
+    address:{
+        type:Sequelize.STRING(200),
+        allowNull:false,
+        defaultValue:'',
+        comment:'收货人地址'
     },
 
     // 商家id

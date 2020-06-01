@@ -53,7 +53,7 @@ Product.init({
     // 定义商品名称
     productName:{
         // STRING:字符类型，40个字符
-        type:Sequelize.STRING(20),
+        type:Sequelize.STRING(40),
         allowNull:false,
         // 默认值
         defaultValue:'',

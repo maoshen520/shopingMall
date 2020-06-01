@@ -80,9 +80,9 @@ exports.productsTypeOptions = [
         typeId:'remaiguoshu'
     },
     {
-        typeName:'jingxuanshuiguo',
-        typeTitle:'精选水果',
-        typeId:'jingxuanshuiguo'
+        typeName:'jinkoushuiguo',
+        typeTitle:'进口水果',
+        typeId:'jinkoushuiguo'
     },
 
     {
@@ -91,14 +91,14 @@ exports.productsTypeOptions = [
         typeId:'tianyuanshishu'
     },
     {
-        typeName:'jingpinroulei',
-        typeTitle:'精品肉类',
-        typeId:'jingpinroulei'
+        typeName:'guochanshuiguo',
+        typeTitle:'国产水果',
+        typeId:'guochanshuiguo'
     },
     {
-        typeName:'liangyouzahuo',
-        typeTitle:'粮油杂货',
-        typeId:'liangyouzahuo'
+        typeName:'xinxianshucai',
+        typeTitle:'新鲜蔬菜',
+        typeId:'xinxianshucai'
     },
 ];
 
@@ -164,6 +164,10 @@ exports.sceneValues = {
             code:2005,
             msg:'请重新登陆'
         },
+        warnPassword:{
+            code:2006,
+            msg:'手机号或密码不正确'
+        }
     },
 
     // 验证码场景值
@@ -175,7 +179,7 @@ exports.sceneValues = {
             msg:'验证码验证成功'
         },
 
-        // 发送验证码失败
+        // 验证码验证失败
         fail:{
             code:3001,
             msg:'验证码验证失败'
@@ -279,6 +283,18 @@ exports.sceneValues = {
         }
     },
 
+    // 启用商品
+    enabledProduct:{
+        success:{
+            msg:'启用商品成功',
+            code:9100
+        },
+        fail:{
+            msg:'启用商品失败',
+            code:9101
+        }
+    },
+
     // 跨域场景值
     origin:{
         fail:{
@@ -325,7 +341,64 @@ exports.sceneValues = {
             msg:'删除购物车商品失败',
             code:21005
         },
-    }
+    },
+
+    // 添加地址场景
+    address:{
+        success:{
+            msg:'新增地址成功',
+            code:22000
+        },
+        fail:{
+            msg:'新增地址失败',
+            code:22001
+        }, 
+    },
+
+    // 修改地址场景
+    changeAddress:{
+        success:{
+            msg:'修改地址成功',
+            code:23000
+        },
+        fail:{
+            msg:'修改地址失败',
+            code:23001
+        }, 
+    },
+
+    // 支付场景
+    alipay:{
+        createOrderSuccess:{
+            msg:'创建订单成功',
+            code:24000
+        },
+        createOrderFail:{
+            msg:'创建订单失败',
+            code:24001
+        }, 
+        successPay:{
+            msg:'支付成功',
+            code:25000
+        },
+        failPay:{
+            msg:'支付失败',
+            code:25001
+        }
+
+    },
+
+    // 删除商家商品场景
+    delectProduct:{
+        success:{
+            msg:'删除商品成功',
+            code:26000
+        },
+        fail:{
+            msg:'删除商品失败',
+            code:26001
+        },
+    },
 
 
 }
@@ -334,7 +407,7 @@ exports.sceneValues = {
 exports.paginationOptions = {
 
     // 每次查询的数字，一页展示的数据
-    count:2
+    count:10
 }
 
 // 阿里云发短信配置
@@ -356,7 +429,8 @@ exports.messageOption = {
 // 允许请求跨域的白名单
 exports.originListOptions = [
     'http://127.0.0.1:10001',
-    'http://localhost:8080'
+    'http://localhost:8080',
+    'http://localhost:8081'
     
 ]
 

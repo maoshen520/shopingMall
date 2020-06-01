@@ -99,7 +99,7 @@ button {
   width: 100%;
   display: block;;
 }
-.add-product,.edit-product{
+.add-product,.edit-product,.sold-product{
   width: 1300px;
   display: none;
 }
@@ -117,4 +117,71 @@ td{
 
 .hide{
   display: none;
+}
+
+.see-box{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:rgba(166, 166, 166, 0.3);
+  display: none;
+}
+.content-box{
+  width: 1200px;
+  height: 800px;
+  background-color: #fff;
+  position: absolute;;
+  top: 50%;
+  left: 50%;
+  margin-top: -380px;
+  margin-left: -600px;
+  overflow: hidden;
+  /* margin-top: 20px; */
+}
+.fl-content-box{
+  padding: 20px 50px;
+  width:50%;
+  height: 90%;
+  float: left;
+}
+.fl-content-box>img{
+  border: 1px solid #ddd;
+  width: 100%;
+}
+.fr-content-box{
+  padding: 20px 0px;
+  width:50%;
+  float: left;
+  height: 90%;
+}
+.fr-content{
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.text1{
+  line-height: 40px;
+  float: left;
+  width: 15%;
+}
+.text2{
+  width: 85%;
+  background-color: #f5f5f5;
+  float: right;
+  overflow: hidden;
+  line-height: 40px;
+}
+.see-close{
+  width: 100px;
+  height: 50px;
+  background-color:#00B050;
+  position: absolute;;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
 }

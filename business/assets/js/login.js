@@ -62,8 +62,9 @@ $(function(){
 
                         // 路径跳转
                         location.href = '/';
+                        alert(data.msg)
                     } else {
-                        console.log(data.msg);
+                        alert(data.msg);
                     }
 
                 }
